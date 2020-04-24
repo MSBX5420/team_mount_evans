@@ -1,0 +1,22 @@
+﻿Design Document
+Team Mount Evans
+
+
+        Team Mount Evan’s objective for the project was to analyze large sets of Twitter data produced in the midst of the CO-VID19 pandemic. The data analyzed stretched from the beginning of March 2020 to the beginning of April 2020. While the data came from all across the world, the team decided to analyze tweets that are in English only. The data was sourced from Kaggle.com. The team used GitHub as a centralized repository for shared data files and working code. The team also used AWS EMR for storage, code construction, and as a local cluster to test iterations of code. The methodology is described below:
+
+
+Step 1: Distributing Raw Data
+* The datasets are downloaded from Kaggle.com and uploaded to the team’s Github for initial analysis
+* Members from the team independently ingest the data for analysis on his or her local machine, sharing preliminary code in the shared GitHub repository. This will be updated throughout the project
+* Selected data is ingested into team member’s S3 buckets for intermediate analysis
+Step 2: AWS EMR
+* Team members create and use independent clusters to analyze data on a larger scale
+* Team members use JupyterLab Notebooks and S3 storage to load data files, develop code, and deploy iterations within the EMR environment
+* Team members regularly update the shared GitHub repository with developing Python and Pyspark code
+Step 3: Final Deployment
+* The final Pyspark code developed in JupyterLab is scaled up to handle files of data that cannot be handled on a single master and slave node
+* The code is pushed to the Leeds cluster, which can handle large files seamlessly
+* In this final stage, multiple iterations of code can be run without being delayed from the dataset volume. New data can also be introduced easily
+
+
+        Team Mount Evans used the above procedure to explore sentiment analysis on Twitter regarding the pandemic. With the tools available in Amazon’s EMR environment, the team was able to calculate and visualize the change in positive and negative sentiment over a period of time. AMS EMR proved to be an extremely useful platform that allowed for ingestion, storage, and analysis that could be scaled up or down as the project demanded.
