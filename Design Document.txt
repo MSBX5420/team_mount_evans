@@ -17,9 +17,9 @@ Step 2: AWS EMR
 * Update team's shared GitHub repository with developing Python and Pyspark code; finalize code
 
 Step 3: Final Deployment
-* Load data to Leeds master node
+* Load data to Leeds S3 bucket
 * Scale up final analysis code to handle larger Twitter datasets
-* Run final analysis in Leeds cluster where multiple iterations can be processed
+* Run final analysis in Leeds EMR cluster where multiple iterations can be processed
 * Introduce new data as needed
 
 
