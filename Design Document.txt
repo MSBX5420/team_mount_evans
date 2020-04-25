@@ -1,15 +1,15 @@
-﻿Design Document
+Design Document
 Team Mount Evans
 
 
-Team Mount Evan’s objective for the project was to analyze large sets of Twitter data produced in the midst of the CO-VID19 pandemic. The data analyzed stretched from the beginning of March 2020 to the beginning of April 2020. While the data came from all across the world, the team decided to analyze tweets that are in English only. The data was sourced from Kaggle.com. The team used GitHub as a centralized repository for shared data files and working code. The team also used AWS EMR for storage, code construction, and as a local cluster to test iterations of code. The methodology is described below:
+Team Mount Evan’s objective for the project was to analyze large sets of Twitter data produced in the midst of the COVID-19 pandemic. The data analyzed stretched from the beginning of March 2020 to the beginning of April 2020. While the data came from all across the world, the team decided to analyze tweets that are in English only. The data was sourced from Kaggle.com. The team used GitHub as a centralized repository for shared data files and working code. The team also used AWS EMR for storage, code construction, and as a local cluster to test iterations of code. The methodology is described below:
 
 
 Step 1: Distributing Raw Data
 * Download datasets from Kaggle.com and upload to team Github for initial analysis
-* Subset dataset for preliminary analysis. The team subsetted March 12, 2020 Twitter data to ~6000 rows
-* Ingest subsetted dataset to members' individual machines for analysis. Upload working code into Github repository throughout project
-* Ingest subsetted dataset to S3 bucket for analysis with AWS EMR for continued analysis
+* Subset dataset for preliminary analysis. The team subset March 12, 2020 Twitter data to ~6000 rows
+* Ingest subset dataset to members' individual machines for analysis. Upload working code into Github repository throughout project
+* Ingest subset dataset to S3 bucket for analysis with AWS EMR for continued analysis
 
 Step 2: AWS EMR
 * Create independent cluster on AWS EMR for local analysis
