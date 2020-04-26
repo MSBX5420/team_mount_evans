@@ -245,7 +245,7 @@ date_formatter = md.DateFormatter('%H:%M')
 
 #Change number according to the data
 datemin = dt.datetime(2020, 3, 12, 00, 00) 
-datemax = dt.datetime(2020, 3, 12, 00, 15)
+datemax = dt.datetime(2020, 3, 12, 17, 30)
 
 
 ax.xaxis.set_major_locator(interval) 
