@@ -55,8 +55,8 @@ dataDates = ['2020-03-00','2020-03-12','2020-03-13',
              '2020-03-20','2020-03-21','2020-03-22',
              '2020-03-23','2020-03-24','2020-03-25',]
 spark = SparkSession.builder.getOrCreate()
-sparkconfiguration = pyspark.SparkConf().set("spark.driver.memory", "2g").set("spark.executor.memory", "2g")
-sc = spark.sparkContext.getOrCreate(sparkconfiguration)
+#sparkconfiguration = pyspark.SparkConf().set("spark.driver.memory", "2g").set("spark.executor.memory", "2g")
+sc = spark.sparkContext.getOrCreate()
 
 
 for tweetDate in dataDates:    
