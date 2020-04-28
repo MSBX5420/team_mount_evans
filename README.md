@@ -37,8 +37,10 @@ Github repository used for version control & code management
 ## Code Links
 
 Final Code Used for EMR Deployment
-* [Final Code.py](https://github.com/MSBX5420/team_mount_evans/blob/master/Final%20Code.py)
+* [finalCode.py](https://github.com/MSBX5420/team_mount_evans/blob/master/code_prod/finalCode.py)
 * [Final Code.ipynb](https://github.com/MSBX5420/team_mount_evans/blob/master/Final%20Code.ipynb)
+
+The .py is a script meant to be submitted to an EMR environment and produce results on a cluster as text files and pngs, while the .ipynb still prints visuals out to console and is interactive.
 
 Sample Data
 * [20200312_Coronavirus_Tweets_Subset.CSV](https://github.com/MSBX5420/team_mount_evans/blob/master/20200312_Coronavirus_Tweets_Subset.CSV)
