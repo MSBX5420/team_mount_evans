@@ -37,8 +37,10 @@ Github repository used for version control & code management
 ## Code Links
 
 Final Code Used for EMR Deployment
-* [Final Code.py](https://github.com/MSBX5420/team_mount_evans/blob/master/Final%20Code.py)
+* [finalCode.py](https://github.com/MSBX5420/team_mount_evans/blob/master/code_prod/finalCode.py)
 * [Final Code.ipynb](https://github.com/MSBX5420/team_mount_evans/blob/master/Final%20Code.ipynb)
+
+The .py is a script meant to be submitted to an EMR environment and produce results on a cluster as text files and pngs, while the .ipynb still prints visuals out to console and is interactive.
 
 Sample Data
 * [20200312_Coronavirus_Tweets_Subset.CSV](https://github.com/MSBX5420/team_mount_evans/blob/master/20200312_Coronavirus_Tweets_Subset.CSV)
@@ -53,6 +55,10 @@ The following code links are segments developed locally prior to the final deloy
 * Further Data Ingesting Code [IngestingData_analysis.ipynb](https://github.com/MSBX5420/team_mount_evans/blob/master/IngestingData_analysis.ipynb)
 * Added addition code to produce WordCloud [IngestingData.py](https://github.com/MSBX5420/team_mount_evans/blob/master/IngestingData.py)
 * Updated Data Analysis Code [Ingestdata_analysis2.py](https://github.com/MSBX5420/team_mount_evans/blob/master/Ingestdata_analysis2.py)
+
+## Visualizations
+
+This [folder](https://github.com/MSBX5420/team_mount_evans/tree/master/figures) contains a few output visualizations from running the deployment code in the EMR cluster. 
 
 ### Other Documents
 
