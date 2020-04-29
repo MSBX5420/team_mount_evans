@@ -47,7 +47,8 @@ import numpy as np
 import textblob as tb
 #pip install wordcloud
 from wordcloud import WordCloud, STOPWORDS
-
+from pandas.plotting import register_matplotlib_converters
+register_matplotlib_converters()
 ##### Initialize Spark Session & Context #####
 dataDates = ['2020-03-00','2020-03-12','2020-03-13',
              '2020-03-14','2020-03-15','2020-03-16',
@@ -69,7 +70,6 @@ for tweetDate in dataDates:
     
     #### CLEAN DATA ####
     # Initially filter tweets in English & create new filtered DataFrame
-    print("check")
     tweet_filter = tweet_raw.select("*", F.when(tweet_raw.lang == 'en', 'TRUE').alias('eng_true'))
     tweet_filter = tweet_filter.filter("eng_true == 'TRUE'")
     # Fix Date Structure
@@ -144,7 +144,7 @@ for tweetDate in dataDates:
     plt.title('How people are reacting on ' + 'Covid-19' + ' by analyzing ' + str(n_tweets) + ' Tweets.')
     plt.axis('equal')
     plt.tight_layout()
-    fig = plt.show()
+    plt.show()
     plt.savefig(tweetDate + '-sentimentPie.png')
     plt.close
     ######## WordClouds ########
@@ -279,6 +279,7 @@ for tweetDate in dataDates:
     ax.set_ylim(min_freq-100, max_freq+100) 
     ax.plot(per_minute.index, per_minute)
     plt.savefig(tweetDate + '-timeSeries.png')
+    plt.close()
     
     # Sum of confirmed cases around the world
     input_path = '/mountTeamEvans/train.CSV'
