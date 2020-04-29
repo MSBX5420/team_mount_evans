@@ -56,6 +56,10 @@ The following code links are segments developed locally prior to the final deloy
 * Added addition code to produce WordCloud [IngestingData.py](https://github.com/MSBX5420/team_mount_evans/blob/master/IngestingData.py)
 * Updated Data Analysis Code [Ingestdata_analysis2.py](https://github.com/MSBX5420/team_mount_evans/blob/master/Ingestdata_analysis2.py)
 
+## Deployment
+
+To deploy the finalCode.py file to an EMR cluster as a spark-submit job, ensure entire data directory is loaded into an accessible S3 bucket (our code uses s3://msbx5420-2020/mountTeamEvans/ ). Once the data is loaded, use scp (or pscp for windows) to copy the finalCode.py file to an EMR master node, under the hadoop user (e.g. hadoop@ec2-54-190-181-56.us-west-2.compute.amazonaws.com:/home/hadoop/teamMountEvans/). After the script is on the cluster, run it by calling python3 finalCode.py. As long as the EMR cluster as the approriate dependencies and modules loaded, the script will execute successfully. The stdout will contain all of the summary statistics from our code, and the various visualizations will save to the EMR cluster as .png files, which will need to be copied to S3 or local, depending on the user preference.
+
 ## Visualizations
 
 This [folder](https://github.com/MSBX5420/team_mount_evans/tree/master/figures) contains a few output visualizations from running the deployment code in the EMR cluster. 
