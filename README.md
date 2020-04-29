@@ -66,7 +66,7 @@ This [folder](https://github.com/MSBX5420/team_mount_evans/tree/master/figures) 
 
 ### Other Documents
 
-TO BE ADDED
+Spec Requirement Document [Spec_Requirement_Final.txt](https://github.com/MSBX5420/team_mount_evans/blob/master/Spec_Requirement_Final.txt)
 
 ## Help
 
