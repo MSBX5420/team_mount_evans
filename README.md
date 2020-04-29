@@ -12,7 +12,7 @@ Step 2: AWS EMR
 
 Step 3: Final Deployment
 
-* More information can be found in the [Design Document.](https://github.com/MSBX5420/team_mount_evans/blob/master/Design%20Document.txt) This will include a more detailed outline of the steps to load, ingest, deploy, and analyze the data as well as a code diagram of operations.
+* More information can be found in the [Design Document.](https://github.com/MSBX5420/team_mount_evans/blob/master/DesignDocument.md) This will include a more detailed outline of the steps to load, ingest, deploy, and analyze the data as well as a code diagram of operations.
 
 ## Getting Started
 
@@ -37,8 +37,8 @@ Github repository used for version control & code management
 ## Code Links
 
 Final Code Used for EMR Deployment
-* [finalCode.py](https://github.com/MSBX5420/team_mount_evans/blob/master/code_prod/finalCode.py)
-* [Final Code.ipynb](https://github.com/MSBX5420/team_mount_evans/blob/master/Final%20Code.ipynb)
+* [finalCode.py](https://github.com/MSBX5420/team_mount_evans/blob/master/code_prod/code_prod/finalCode.py)
+* [Final Code.ipynb](https://github.com/MSBX5420/team_mount_evans/blob/master/code_prod/Final%20Code.ipynb)
 
 The .py is a script meant to be submitted to an EMR environment and produce results on a cluster as text files and pngs, while the .ipynb still prints visuals out to console and is interactive.
 
@@ -70,7 +70,7 @@ TO BE ADDED
 
 ## Help
 
-Any questions may be directed to the [Design Document](https://github.com/MSBX5420/team_mount_evans/blob/master/Design%20Document.txt) or the below contributors to this project.
+Any questions may be directed to the [Design Document](https://github.com/MSBX5420/team_mount_evans/blob/master/DesignDocument.md) or the below contributors to this project.
 
 ## Authors
 
