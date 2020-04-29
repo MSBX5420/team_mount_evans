@@ -50,11 +50,11 @@ from wordcloud import WordCloud, STOPWORDS
 from pandas.plotting import register_matplotlib_converters
 register_matplotlib_converters()
 ##### Initialize Spark Session & Context #####
-dataDates = ['2020-03-00','2020-03-12','2020-03-13',
+dataDates = ['2020-03-11','2020-03-12','2020-03-13',
              '2020-03-14','2020-03-15','2020-03-16',
              '2020-03-17','2020-03-18','2020-03-19',
              '2020-03-20','2020-03-21','2020-03-22',
-             '2020-03-23','2020-03-24','2020-03-25',]
+             '2020-03-23','2020-03-24','2020-03-25']
 spark = SparkSession.builder.getOrCreate()
 #sparkconfiguration = pyspark.SparkConf().set("spark.driver.memory", "2g").set("spark.executor.memory", "2g")
 sc = spark.sparkContext.getOrCreate()
@@ -267,8 +267,8 @@ for tweetDate in dataDates:
     date_formatter = md.DateFormatter('%H:%M')
     
     #Change number according to the data
-    datemin = dt.datetime(2020, 3, 12, 00, 00) 
-    datemax = dt.datetime(2020, 3, 12, 17, 30)
+    datemin = dt.datetime(2020, 3, int(tweetDate[8:10]), 00, 00) 
+    datemax = dt.datetime(2020, 3, int(tweetDate[8:10]), 23, 59)
     
     
     ax.xaxis.set_major_locator(interval) 
@@ -279,7 +279,7 @@ for tweetDate in dataDates:
     ax.set_ylim(min_freq-100, max_freq+100) 
     ax.plot(per_minute.index, per_minute)
     plt.savefig(tweetDate + '-timeSeries.png')
-    plt.close()
+    plt.cla()
     
     # Sum of confirmed cases around the world
     input_path = '/mountTeamEvans/train.CSV'
