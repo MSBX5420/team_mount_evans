@@ -37,7 +37,7 @@ Github repository used for version control & code management
 ## Code Links
 
 Final Code Used for EMR Deployment
-* [finalCode.py](https://github.com/MSBX5420/team_mount_evans/blob/master/code_prod/code_prod/finalCode.py)
+* [finalCode.py](https://github.com/MSBX5420/team_mount_evans/blob/master/code_prod/finalCode.py)
 * [Final Code.ipynb](https://github.com/MSBX5420/team_mount_evans/blob/master/code_prod/Final%20Code.ipynb)
 
 The .py is a script meant to be submitted to an EMR environment and produce results on a cluster as text files and pngs, while the .ipynb still prints visuals out to console and is interactive.
@@ -49,12 +49,12 @@ Testing Code
 
 The following code links are segments developed locally prior to the final deloyment of the entire dataset. The below code  was tested on a small subset of the data and applied to the master file upon deployment.
 
-* Sentiment analysis using TextBlob of Tweets in English [spark_data_ingest.py](https://github.com/MSBX5420/team_mount_evans/blob/master/spark_data_ingest.py)
-* Added New Cleaning Code [Data Ingest and Cleaning.py](https://github.com/MSBX5420/team_mount_evans/blob/master/Data%20Ingest%20and%20Cleaning.py)
-* Create Wordcloud Code [Wordcloud Code](https://github.com/MSBX5420/team_mount_evans/blob/master/Wordcloud%20Code)
-* Further Data Ingesting Code [IngestingData_analysis.ipynb](https://github.com/MSBX5420/team_mount_evans/blob/master/IngestingData_analysis.ipynb)
-* Added addition code to produce WordCloud [IngestingData.py](https://github.com/MSBX5420/team_mount_evans/blob/master/IngestingData.py)
-* Updated Data Analysis Code [Ingestdata_analysis2.py](https://github.com/MSBX5420/team_mount_evans/blob/master/Ingestdata_analysis2.py)
+* Sentiment analysis using TextBlob of Tweets in English [spark_data_ingest.py](https://github.com/MSBX5420/team_mount_evans/blob/master/code_test/spark_data_ingest.py)
+* Added New Cleaning Code [Data Ingest and Cleaning.py](https://github.com/MSBX5420/team_mount_evans/blob/master/code_test/Data%20Ingest%20and%20Cleaning.py)
+* Create Wordcloud Code [Wordcloud Code](https://github.com/MSBX5420/team_mount_evans/blob/master/code_test/Wordcloud%20Code)
+* Further Data Ingesting Code [IngestingData_analysis.ipynb](https://github.com/MSBX5420/team_mount_evans/blob/master/code_test/IngestingData_analysis.ipynb)
+* Added addition code to produce WordCloud [IngestingData.py](https://github.com/MSBX5420/team_mount_evans/blob/master/code_test/IngestingData.py)
+* Updated Data Analysis Code [Ingestdata_analysis2.py](https://github.com/MSBX5420/team_mount_evans/blob/master/code_test/Ingestdata_analysis2.py)
 
 ## Deployment
 
