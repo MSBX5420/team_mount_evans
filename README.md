@@ -58,7 +58,7 @@ The following code links are segments developed locally prior to the final deloy
 
 ## Visualizations
 
-This [folder](https://github.com/MSBX5420/team_mount_evans/tree/master/figures) contains a few output visualizaations from running the deployment code in the EMR cluster. 
+This [folder](https://github.com/MSBX5420/team_mount_evans/tree/master/figures) contains a few output visualizations from running the deployment code in the EMR cluster. 
 
 ### Other Documents
 
